@@ -65,6 +65,7 @@ pipeline {
 4. mkdir scripts
 5. cat > fibonacci.sh
 6. Exit with Ctl + C
+7. chmod +x fibonacci.sh
 
 ```
 pipeline {

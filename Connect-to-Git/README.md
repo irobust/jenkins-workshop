@@ -10,12 +10,21 @@ in github, get a personal access token:
 
 https://github.com/settings/tokens
 
-3. when creating the token, add:
-admin:repo_hook
-repo:*
-notifications:*
+3. Go to Developer Settings -> Personal access token
+4. Click Generate new token
+5. when creating the token, add:
+```
+        admin:repo_hook
+        repo:*
+        notifications:*
+```
 
-4. after configuring jenkins, verify that the webhook was created
+6. Go to Github Server section (in system configuration page) and add new credentials
+
+7. Create multi-branch project
+8. Add github credential 
+
+9. after configuring jenkins, verify that the webhook was created
 https://github.com/{your_github_user_name}/jenkins-git/settings/hooks
 
 
