@@ -2,7 +2,7 @@
 We'll need to get a personal API key from our git repo
 1. create a fork of this repository:
 
-https://github.com/irobust/jenkins-git.git
+https://github.com/robertstarmer/jenkins-git.git
 
 2. creating
 https://github.com/{your_github_user_name}/jenkins-git.git
