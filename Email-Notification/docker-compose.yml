@@ -20,7 +20,7 @@ services:
     restart: unless-stopped
     ports:
     - "127.0.0.1:8025:8025" # mailhog's web app (think test instance of gmail)
-    # "127.0.0.1:1025:1025" # jenkins will use `mail:1025` to send emails, only map to host if you want to send files
+    - "127.0.0.1:1025:1025" # jenkins will use `mail:1025` to send emails, only map to host if you want to send files
 
 
 ## NOTES:
