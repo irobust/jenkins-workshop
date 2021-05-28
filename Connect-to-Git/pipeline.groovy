@@ -13,16 +13,6 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                sh 'false'
-            }
-
-            post {
-                success {
-                    sh 'echo build succees'
-                }
-                failure {
-                    sh 'echo build fail'
-                }
             }
         }
     }
