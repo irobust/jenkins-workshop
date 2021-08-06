@@ -4,6 +4,7 @@ services:
 
   jenkins:
     image: jenkins/jenkins:lts
+    platform: linux/x86_64
     ports:
     - "127.0.0.1:9080:8080"
     volumes:
@@ -17,6 +18,7 @@ services:
   # I like docker-compose because I can easily spin up multiple apps like a test email server alongside jenkins! for testing email notifications from jenkins (later)
   mails:
     image: mailhog/mailhog
+    platform: linux/x86_64
     restart: unless-stopped
     ports:
     - "127.0.0.1:8025:8025" # mailhog's web app (think test instance of gmail)
