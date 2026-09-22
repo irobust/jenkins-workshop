@@ -3,8 +3,8 @@
 1. Install Docker for Desktop (https://www.docker.com/products/docker-desktop)
 2. Build and run jenkins images
 ```
-    docker pull jenkins/jenkins:lts-jdk11 
-    docker run -p 8080:8080 -p 50000:50000 -v jenkins-home:/var/jenkins-home --name jenkins-server jenkins/jenkins:lts-jdk11
+    docker pull jenkins/jenkins:lts-jdk21 
+    docker run -p 8080:8080 -p 50000:50000 -v jenkins-home:/var/jenkins-home --name jenkins-server jenkins/jenkins:lts-jdk21
 ```
 3. Get default credentials
 ```
