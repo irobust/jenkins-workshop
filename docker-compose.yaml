@@ -3,8 +3,6 @@ services:
     image: sonarqube:community
     hostname: sonarqube
     container_name: sonarqube
-    depends_on:
-      - sonarqube-db
     volumes:
       - sonarqube_data:/opt/sonarqube/data
       - sonarqube_extensions:/opt/sonarqube/extensions
@@ -22,7 +20,9 @@ services:
       - nexus-data:/nexus-data
 
   jenkins:
-    image: jenkins/jenkins:lts
+    build:
+      context: .
+      dockerfile: jenkins.dockerfile
     container_name: jenkins
     ports:
       - "8080:8080"
